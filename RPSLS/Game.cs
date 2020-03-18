@@ -8,33 +8,57 @@ namespace RPSLS
 {
     class Game
     {
-        Player playerone;
-        Player playertwo;
+        Player playerOne;
+        Player playerTwo;
 
-        public void RulesOfGame()
+        public void RunMatch()
         {
-            List<string> listofRules = new List<string>();
-            listofRules.Add("Rules Of The Game");
-            listofRules.Add("Rock crushes scissors");
-            listofRules.Add("Scissors cuts paper");
-            listofRules.Add("Paper covers rock");
-            listofRules.Add("Rock crushes lizard");
-            listofRules.Add("Lizard poisons Spock");
-            listofRules.Add("Spock smashes scissors");
-            listofRules.Add("Scissors decapitate lizard");
-            listofRules.Add("Lizard eats paper");
-            listofRules.Add("Paper disproves Spock");
-            listofRules.Add("Spock vaporizes rock");
-
+            Console.WriteLine("This rules of the game are, rock crushes scissors, scissors cuts paper," +
+                " paper covers rock, " +"rock crushes lizard, lizard poisons spock," +
+                "spock smashes scissors, scissors decapitate lizard," +
+                " lizard eats paper, paper disproves spock, spock vaporizes rock");
+            Console.ReadLine();
         }
 
         public void ChooseGameMode()
         {
+            Console.WriteLine("Choose a game mode either, 1 for vs Ai, 2 for vs human");
+            Console.ReadLine();
            
+            
+                
+
+
+
+
+
+            
+            
+           
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
-
-        
-
 
     }
 }

@@ -13,13 +13,13 @@ namespace RPSLS
         {
             this.name = name;
             score = 0;
-            gesture = ("Rock,Paper,Scissors,Lizard,Spock");
-        }   
-        
+            gesture = "Rock,Paper,Scissors,Lizard,Spock";
+        }
 
-        
-        
-        
-       
+
+
+
+
+
     }
 }
