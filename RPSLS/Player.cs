@@ -12,6 +12,12 @@ namespace RPSLS
         public int score;
         public string gestures;
 
+        public Player(string gesture)
+        {
+            this.gestures = gesture;
+            Console.WriteLine("Choose a gesture");
+        }
+
         
         
             

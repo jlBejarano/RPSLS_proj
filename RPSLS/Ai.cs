@@ -8,12 +8,15 @@ namespace RPSLS
 {
     class Ai : Player
     {
-      
+        public string gesture;
+
         public Ai(string name, int score, string gesture)
+            :base(gesture)
         {
             this.name = name;
             score = 0;
-            gesture = "Rock,Paper,Scissors,Lizard,Spock";
+            this.gestures = gesture;
+            Console.WriteLine("Rock,Paper,Scissors,Lizard,Spock");
         }
 
 
