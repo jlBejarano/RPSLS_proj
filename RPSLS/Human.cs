@@ -9,17 +9,15 @@ namespace RPSLS
     class Human : Player
     {
         public Human(string name, int  score, string gesture)
-            :base(gesture)
         {
             this.name = name;
-            score = 0;
             this.gestures = gesture;
-            Console.WriteLine("Rock,Paper,Scissors,Lizard,Spock");
+            Console.WriteLine("Rock,Paper,Scissors,Lizard,Spock!");
         }
 
-        public void ChooseGestures()
+        public override void GestureChoice()
         {
-            string[] ChoosegesturesArray = {"Rock", "Paper", "Scissors", "Lizard","Spock");
+            string[] ChoosegesturesArray = { "Rock", "Paper", "Scissors", "Lizard", "Spock!" };
            
         }
 

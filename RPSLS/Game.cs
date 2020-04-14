@@ -6,38 +6,25 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Game
+    public class Game
     {   
         public string winner;
         public int round;
-        public string gestures;
-        public string input;
-
-        Player playerOne;
-        Player playerTwo;
-        
-        List<string> AddGestures = new List<string>();
+        public Player playerOne;
+        public Player playerTwo;
+        int playerOneScore;
+        int playerTwoScore;
 
         public Game()
         {
-            AddGestures.Add("Rock");
-            AddGestures.Add("Scissors");
-            AddGestures.Add("Paper");
-            AddGestures.Add("Lizard");
-            AddGestures.Add("Spock");
-
+            playerOneScore = 0;
+            playerTwoScore = 0;
         }
-
-
-
-        
-
-        
-
-        public void ChooseGameMode()
+            public void ChooseGameMode()
             {
                 Console.WriteLine("Choose a game mode either, 1 for vs Ai, 2 for vs human");
                 string userInput = Console.ReadLine();
+                userInput = userInput.ToLower();
                 
                 if (userInput == "1")
                 {
@@ -51,8 +38,8 @@ namespace RPSLS
                 {
                 string user;
                 user = Console.ReadLine();
-                    PlayerOne = new Human(user);
-                    PlayerTwo = new Human(user);
+                    playerOne = new Human(user);
+                    playerTwo = new Human(user);
                 }
 
                 public void DisplayRules()
@@ -73,7 +60,7 @@ namespace RPSLS
 
             public void ChooseGesture()
             {
-                if (PlayerOne.chooseGesture == "Rock" && PlayerTwo.chooseGesture == "Scissors") ;
+                if (playerOne.chooseGesture == "Rock" && PlayerTwo.chooseGesture == "Scissors") ;
                 Console.WriteLine("PlayerOne wins the round");
                 Console.WriteLine("PlayerOne score is" + PlayerOne.score);
                 Console.ReadLine();
