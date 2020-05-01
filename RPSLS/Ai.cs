@@ -16,8 +16,17 @@ namespace RPSLS
 
         public override void GestureChoice()
         {
+            Console.WriteLine("Rock, Paper, Scissors, Lizard, Spock");
 
+            var random = new Random();
+            {
+                var list = new List<string> { "RPSLS" };
+                Console.WriteLine(name + "picked" + list);
+                Console.ReadLine();
+            }
         }
+
+
 
 
 
