@@ -14,6 +14,8 @@ namespace RPSLS
         public Player playerTwo;
         int playerOneScore;
         int playerTwoScore;
+        int playerOneScoreMin = 0;
+        int playerOneScoreMax = 3;
 
         public Game()
         {
@@ -51,6 +53,7 @@ namespace RPSLS
         {
 
             int playerScore = 0;
+ 
             if (playerOne.chooseGesture == "Rock" && (playerTwo.chooseGesture == "Scissors"))
             {
                 Console.WriteLine("PlayerOne wins the round");
@@ -87,6 +90,11 @@ namespace RPSLS
         
         public void RunMatch()
         {
+            ChooseGameMode();
+            ChooseGesture();
+
+            Console.WriteLine("Make selection, select opponent");
+            Console.ReadLine();
 
         }
         
